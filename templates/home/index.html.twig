@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}EventRoom - Espaces Professionnels{% endblock %}
+
+{% block body %}
+<!-- Hero Section Professional -->
+<div class="position-relative p-5 p-md-5 mb-5 text-center text-white rounded-3 shadow-lg" 
+     style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://t3.ftcdn.net/jpg/16/58/06/66/360_F_1658066640_VHexyeJROheUQOCnQAiaWjsCWcDDsZEe.jpg'); background-size: cover; background-position: center;">
+    <div class="col-md-8 mx-auto py-5">
+        <h1 class="display-4 fw-bold mb-3">L'excellence pour vos événements</h1>
+        <p class="lead mb-4 fw-light">Réservez des salles de réunion, conférences et séminaires équipées, en plein cœur de la ville.</p>
+        <div class="d-gap gap-3 d-sm-flex justify-content-sm-center">
+            <a href="{{ path('app_salle_index') }}" class="btn btn-primary btn-lg px-4 gap-3 fw-bold border-0" style="background-color: #3E61E0;">Découvrir les espaces</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Nous contacter</a>
+        </div>
+    </div>
+</div>
+
+<!-- Features Minimalist -->
+<div class="row g-4 py-4 row-cols-1 row-cols-lg-3 text-center">
+    <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-primary fs-2 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+        </div>
+        <h3 class="fs-4 text-dark mt-2">Recherche Intuitive</h3>
+        <p class="text-muted">Trouvez la salle parfaite en filtrant par capacité et dates.</p>
+    </div>
+    <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-primary fs-2 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16"><path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg>
+        </div>
+        <h3 class="fs-4 text-dark mt-2">Réservation Instantanée</h3>
+        <p class="text-muted">Disponibilité en temps réel et confirmation immédiate.</p>
+    </div>
+    <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-primary fs-2 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/></svg>
+        </div>
+        <h3 class="fs-4 text-dark mt-2">Paiement Sécurisé</h3>
+        <p class="text-muted">Transactions chiffrées et facturation automatique.</p>
+    </div>
+</div>
+
+<hr class="my-5 opacity-10">
+
+<!-- Rooms Selection -->
+<h2 class="mb-5 text-center fw-bold text-dark">Nos espaces à la une</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm hover-shadow transition">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/45036687.jpg?k=fdf7463515c42c6f64db306c4ef77745cf84de2306e7fa9e2126df3ae47fe0c8&o=" class="card-img-top rounded-top-3" alt="..." style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Royal Suites Zaragoza</h5>
+                <p class="card-text text-muted small">Idéal pour les boards de direction.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="badge bg-light text-dark border">12 Personnes</span>
+                    <small class="text-primary fw-bold">50€/heure</small>
+                </div>
+            </div>
+            <div class="card-footer bg-white border-0 pt-0">
+                <a href="{{ path('app_salle_index') }}" class="btn btn-dark w-100 rounded-pill">Réserver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdVjI9x2uJJGG0wTKnYK69ON_UvutbekE2g&s" class="card-img-top rounded-top-3" alt="..." style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Salle de projection</h5>
+                <p class="card-text text-muted small">Espace ouvert pour brainstorming.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="badge bg-light text-dark border">20 Personnes</span>
+                    <small class="text-primary fw-bold">35€/heure</small>
+                </div>
+            </div>
+             <div class="card-footer bg-white border-0 pt-0">
+                <a href="{{ path('app_salle_index') }}" class="btn btn-dark w-100 rounded-pill">Réserver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 border-0 shadow-sm">
+             <img src="https://st.depositphotos.com/1808367/4327/i/450/depositphotos_43274673-stock-photo-theater-seats.jpg" class="card-img-top rounded-top-3" alt="..." style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Auditorium</h5>
+                <p class="card-text text-muted small">Pour vos présentations produits.</p>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <span class="badge bg-light text-dark border">50 Personnes</span>
+                    <small class="text-primary fw-bold">100€/heure</small>
+                </div>
+            </div>
+             <div class="card-footer bg-white border-0 pt-0">
+                <a href="{{ path('app_salle_index') }}" class="btn btn-dark w-100 rounded-pill">Réserver</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5 opacity-10">
+
+<!-- Section Contact -->
+<div id="contact" class="row justify-content-center py-5">
+    <div class="col-md-6 text-center">
+        <h2 class="fw-bold text-dark mb-4">Une question ?</h2>
+        <p class="text-muted mb-4">Notre équipe vous accompagne dans l'organisation de vos événements professionnels.</p>
+        <div class="card border-0 shadow-sm p-4 text-start">
+            <form onsubmit="event.preventDefault(); alert('Message envoyé ! Nous vous répondrons très prochainement.');">
+                <div class="mb-3">
+                    <label class="form-label small fw-bold">Nom complet</label>
+                    <input type="text" class="form-control border-light shadow-sm" placeholder="Votre nom" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small fw-bold">Email</label>
+                    <input type="email" class="form-control border-light shadow-sm" placeholder="votre@email.com" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small fw-bold">Message</label>
+                    <textarea class="form-control border-light shadow-sm" rows="3" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary px-5 rounded-pill shadow-sm w-100">
+                    <i class="fa-solid fa-paper-plane me-2"></i>Envoyer ma demande
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
